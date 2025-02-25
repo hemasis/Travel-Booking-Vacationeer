@@ -9,6 +9,8 @@ import italy1 from "../assets/italy1.jpg"
 import italy2 from "../assets/italy2.jpg"
 import sp1 from "../assets/sp1.jpg"
 import sp2 from "../assets/sp2.jpg"
+import uae1 from "../assets/uae1.jpg"
+import uae2 from "../assets/uae2.jpg"
 import "./destinationStyles.css"
 
 const Destination = () => {
@@ -40,16 +42,16 @@ const Destination = () => {
             <DestinationData
                 className="first-des-reverse"
                 heading="Italy"
-                text="Norway, a land of stunning natural beauty, offers travelers a unique experience with its dramatic landscapes, fjords, and rich Viking history. From the iconic Geirangerfjord to the Northern Lights in Tromsø, Norway is a paradise for nature enthusiasts and adventure seekers. Explore the vibrant city of Oslo, known for its museums, modern architecture, and beautiful parks, or visit Bergen, a gateway to the fjords with its charming wooden houses and colorful markets. Hiking in the Lofoten Islands or cruising along the Arctic coast, Norway’s untouched beauty and tranquil charm make it a must-visit destination."
+                text="Italy, a country of timeless beauty and rich history, offers an unforgettable journey through art, culture, and breathtaking landscapes. From the ancient ruins of Rome and the romantic canals of Venice to the stunning coastline of the Amalfi Coast, every corner of Italy tells a story. Explore the artistic treasures of Florence, indulge in world-famous Italian cuisine, and experience the charm of picturesque villages like Cinque Terre. Whether it's the rolling vineyards of Tuscany, the vibrant streets of Milan, or the serene lakes of Como, Italy captivates travelers with its history, elegance, and warm hospitality."
                 img1={italy1}
                 img2={italy2}
             />
             <DestinationData
                 className="first-des"
-                heading="Las Vegas"
-                text="Las Vegas, the entertainment capital of the world, is a dazzling city where excitement never ends. Known for its iconic Strip lined with world-renowned casinos, resorts, and show venues, Las Vegas offers a vibrant mix of nightlife, live performances, and fine dining. Explore the extravagant themed hotels, catch a famous Cirque du Soleil show, or try your luck at the gaming tables. During the day, visitors can enjoy pool parties, shopping, and nearby natural wonders like the Grand Canyon. With its bright lights, unforgettable experiences, and 24/7 energy, Las Vegas promises an adventure like no other."
-                img1={la1}
-                img2={la2}
+                heading="UAE"
+                text="The United Arab Emirates, a land of futuristic cities, rich culture, and stunning desert landscapes, offers an extraordinary travel experience. Dubai, known for its towering Burj Khalifa, luxury shopping, and vibrant nightlife, blends modernity with tradition. Abu Dhabi, home to the majestic Sheikh Zayed Grand Mosque and cultural landmarks like the Louvre Abu Dhabi, showcases the country’s heritage and innovation. Visitors can explore the golden dunes of the Arabian Desert, relax on pristine beaches, or experience thrilling adventures like dune bashing and skydiving. With its luxury, tradition, and adventure, the UAE is a destination like no other."
+                img1={uae1}
+                img2={uae2}
             />
             <DestinationData
                 className="first-des-reverse"

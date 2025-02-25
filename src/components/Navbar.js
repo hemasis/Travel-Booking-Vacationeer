@@ -1,14 +1,27 @@
 import { Component } from "react";
 import { Link } from "react-router-dom";
 import { MenuItems } from "./MenuItems";
-import { FaSun, FaMoon } from "react-icons/fa"; // Import the icons
+import { FaSun, FaMoon } from "react-icons/fa"; // Dark mode icons
 import "./navbarstyles.css";
 
 class Navbar extends Component {
-  state = { clicked: false };
+  state = { 
+    clicked: false,
+    isDarkMode: false // Dark mode state
+  };
 
   handleClick = () => {
     this.setState({ clicked: !this.state.clicked });
+  };
+
+  toggleDarkMode = () => {
+    this.setState(prevState => ({ isDarkMode: !prevState.isDarkMode }), () => {
+      if (this.state.isDarkMode) {
+        document.body.classList.add("dark");
+      } else {
+        document.body.classList.remove("dark");
+      }
+    });
   };
 
   render() {
@@ -33,9 +46,9 @@ class Navbar extends Component {
           })}
         </ul>
 
-        {/* Dummy Dark Mode Icon */}
-        <button className="dark-mode-toggle">
-          <FaMoon /> {/* Static icon, no functionality */}
+        {/* Dark Mode Toggle Button */}
+        <button className="dark-mode-toggle" onClick={this.toggleDarkMode}>
+          {this.state.isDarkMode ? <FaSun /> : <FaMoon />}
         </button>
       </nav>
     );
