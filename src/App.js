@@ -6,6 +6,7 @@ import About from './routes/About';
 import Service from './routes/Service';
 import Contact from './routes/Contact';
 import Navbar from './components/Navbar'; // Assuming you have a Navbar component
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 function App() {
   // Initialize dark mode state (default is false)
@@ -30,6 +31,8 @@ function App() {
       {/* Navbar with Dark Mode Toggle */}
       <Navbar toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
 
+      <SpeedInsights />
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
